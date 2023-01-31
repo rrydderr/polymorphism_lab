@@ -17,8 +17,15 @@ public class OfficeTest {
     }
 
     @Test
-    void canGetLocation(){
-        assertThat(office.getLocation()).isEqualTo("This building is located on Lemon Street");
+    void canGetLocation__noArgument(){
+        String expected = "This office is located on Lemon Street";
+        assertThat(office.getLocation()).isEqualTo(expected);
+    }
+
+    @Test
+    void canGetLocation__withArgument(){
+        String expected = "This office has relocated to Lime Street";
+        assertThat(office.getLocation("Lime Street")).isEqualTo(expected);
     }
 
 

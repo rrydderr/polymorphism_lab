@@ -7,5 +7,13 @@ public class Town {
         this.buildings = new ArrayList<>();
     }
 
+    public int countBuildings(){
+        return this.buildings.size();
+    }
+
+    public void addBuilding(Building building){
+        this.buildings.add(building);
+    }
+
 
 }

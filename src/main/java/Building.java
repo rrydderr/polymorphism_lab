@@ -15,12 +15,13 @@ public abstract class Building {
 
     }
 
-    //getters and setters
-
 
     //method to give location of the building
-    public String getLocation(){
-        return "This building is located on " + this.location;
-    }
+//    public String getLocation(){
+//        return "This building is located on " + this.location;
+//    }
+
+    //this is the abstract method
+    public abstract String getLocation();
 
 }

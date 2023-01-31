@@ -11,12 +11,12 @@ public class StudentFlatTest {
 
     @BeforeEach
     void setUp(){
-        studentFlat = new StudentFlat(8, LocalDate.of(1999,05,11), "Thyme Park", 11,"KCL");
+        studentFlat = new StudentFlat(8, LocalDate.of(1999,05,11), "Thyme Close", 11,"KCL");
         }
 
         @Test
         void canGetLocation(){
-        assertThat(studentFlat.getLocation()).isEqualTo("This building is in a quiet cul-de-sac next to Thyme Park");}
+        assertThat(studentFlat.getLocation()).isEqualTo("This building is located at the end of a cul-de-sac called Thyme Close");}
 
 
         @Test

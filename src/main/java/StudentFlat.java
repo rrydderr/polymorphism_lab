@@ -19,7 +19,7 @@ public class StudentFlat extends Building {
         this.universityName = universityName;
     }
 
-
+        //could add method overload here
     //method to host a party
     public void hostParty(){
         numberOfPartiesHosted++;
@@ -30,7 +30,7 @@ public class StudentFlat extends Building {
     //method overridden from building
     @Override
     public String getLocation(){
-        return "This building is in a quiet cul-de-sac next to " + this.location;
+        return "This building is located at the end of a cul-de-sac called " + this.location;
     }
 
 }

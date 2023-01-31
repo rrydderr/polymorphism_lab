@@ -20,15 +20,23 @@ public class Bungalow extends Building {
 
 
     //method for calculating price of bungalow
-    public int priceOfBungalow(){
-        return this.houseNumber * 5;
+    public String priceOfBungalow() {
+        int price = this.houseNumber * 5;
+        return "The price of this Bungalow is £" + price;
+    }
+
+    //method overload
+    public String priceOfBungalow(int reducedPrice) {
+        return "The price of this Bungalow has reduced to £" + reducedPrice;
     }
 
 
-//method overridden from Building
+    //method overridden from Building
     @Override
-    public String getLocation(){
-        return "This property is located on " + this.location;
-        }
+    public String getLocation() {
+        return "This building is located on " + this.location;
     }
+
+}
+
 
