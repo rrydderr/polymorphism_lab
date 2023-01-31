@@ -6,7 +6,9 @@ public abstract class Building {
     protected String location;
 
 //constructor
-    public Building(int numberOfRooms, LocalDate dateOfConstruction, String location){
+    public Building(int numberOfRooms,
+                    LocalDate dateOfConstruction,
+                    String location){
         this.numberOfRooms = numberOfRooms;
         this.dateOfConstruction = dateOfConstruction;
         this.location = location;

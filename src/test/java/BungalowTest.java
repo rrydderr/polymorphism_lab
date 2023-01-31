@@ -24,5 +24,10 @@ public class BungalowTest {
 //
 //    }
 
+    @Test
+    void canCalculateBungalowPrice(){
+        assertThat(bungalow.priceOfBungalow()).isEqualTo(230);
+    }
+
 
 }

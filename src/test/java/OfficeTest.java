@@ -13,7 +13,7 @@ public class OfficeTest {
 
     @BeforeEach
     void setUp(){
-        office = new Office(24, LocalDate.of(2000, 7,24), "Lemon Street");
+        office = new Office(24, LocalDate.of(2000, 7,24), "Lemon Street", "BNTA", 24);
     }
 
     @Test
@@ -24,8 +24,12 @@ public class OfficeTest {
 
 //    @Test
 //    void canCalculateNumberOfEmployees(){
-//        Office office1 = new Office (24, LocalDate.of(2000, 7,24), "lemon Street", "BNTA", 12);
-//        office1.numberOfEmployees();
-//        assertThat(office1.employeeCount()).isEqualTo(12);
+//        office.numberOfEmployees();
+//        assertThat(office.employeeCount()).isEqualTo(12);
 //    }
+
+    @Test
+    void canCalculateNumberOfEmployees(){
+        assertThat(office.numberOfEmployees()).isEqualTo(12);
+    }
 }

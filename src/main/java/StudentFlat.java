@@ -2,17 +2,18 @@ import java.time.LocalDate;
 
 public class StudentFlat extends Building {
 
-    public StudentFlat(int numberOfRooms, LocalDate dateOfConstruction, String location){
-        super(numberOfRooms, dateOfConstruction, location);
-    }
-
     //properties which are unique to StudentFlat
-    int numberOfPartiesHosted;
-    String universityName;
+    protected int numberOfPartiesHosted;
+    private String universityName;
 
 
     //new constructor
-    public StudentFlat (int numberOfRooms, LocalDate dateOfConstruction, String location, int numberOfPartiesHosted, String universityName){
+    public StudentFlat (
+            int numberOfRooms,
+            LocalDate dateOfConstruction,
+            String location,
+            int numberOfPartiesHosted,
+            String universityName){
         super(numberOfRooms, dateOfConstruction, location);
         this.numberOfPartiesHosted = numberOfPartiesHosted;
         this.universityName = universityName;

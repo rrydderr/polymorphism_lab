@@ -1,17 +1,18 @@
 import java.time.LocalDate;
 
 public class Bungalow extends Building {
-    public Bungalow(int numberOfRooms, LocalDate dateOfConstruction, String location) {
-        super(numberOfRooms, dateOfConstruction, location);
-    }
 
     //properties unique to Bungalow
-    boolean centralHeating;
-    int houseNumber;
+    private boolean centralHeating;
+    private int houseNumber;
 
 
     //new constructor
-    public Bungalow(int numberOfRooms, LocalDate dateOfConstruction, String location, boolean centralHeating, int houseNumber) {
+    public Bungalow(int numberOfRooms,
+                    LocalDate dateOfConstruction,
+                    String location,
+                    boolean centralHeating,
+                    int houseNumber) {
         super(numberOfRooms, dateOfConstruction, location);
         this.centralHeating = centralHeating;
         this.houseNumber = houseNumber;
@@ -20,8 +21,7 @@ public class Bungalow extends Building {
 
     //method for calculating price of bungalow
     public int priceOfBungalow(){
-        int price = this.houseNumber * 5;
-        return price;
+        return this.houseNumber * 5;
     }
 
 
