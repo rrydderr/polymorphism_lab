@@ -19,7 +19,6 @@ public class StudentFlat extends Building {
         this.universityName = universityName;
     }
 
-        //could add method overload here
     //method to host a party
     public void hostParty(){
         numberOfPartiesHosted++;

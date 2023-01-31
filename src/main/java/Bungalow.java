@@ -1,13 +1,13 @@
 import java.time.LocalDate;
 
-public class Bungalow extends Building {
+public class Bungalow extends Building implements IRent{
 
     //properties unique to Bungalow
     private boolean centralHeating;
     private int houseNumber;
 
 
-    //new constructor
+    //constructor
     public Bungalow(int numberOfRooms,
                     LocalDate dateOfConstruction,
                     String location,
@@ -37,6 +37,12 @@ public class Bungalow extends Building {
         return "This building is located on " + this.location;
     }
 
+    //interface implementation
+
+    @Override
+    public String rent(int days) {
+        return "You are able to rent this bungalow for " + days + " days.";
+    }
 }
 
 

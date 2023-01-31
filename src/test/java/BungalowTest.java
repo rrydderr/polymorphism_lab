@@ -15,7 +15,7 @@ public class BungalowTest {
 
     @Test
     void canGetLocation(){
-        assertThat(bungalow.getLocation()).isEqualTo("This property is located on First Avenue");
+        assertThat(bungalow.getLocation()).isEqualTo("This building is located on First Avenue");
     }
 
 
@@ -29,6 +29,12 @@ public class BungalowTest {
     void canCalculateBungalowPrice__withArgument(){
         String expected = "The price of this Bungalow has reduced to £200";
         assertThat(bungalow.priceOfBungalow(200)). isEqualTo(expected);
+    }
+
+    @Test
+    void canRentBungalowFromBookingWebsite(){
+        String result = bungalow.rent(13);
+        assertThat(result).isEqualTo("You are able to rent this bungalow for 13 days.");
     }
 
 }

@@ -28,15 +28,19 @@ public class OfficeTest {
         assertThat(office.getLocation("Lime Street")).isEqualTo(expected);
     }
 
-
-//    @Test
-//    void canCalculateNumberOfEmployees(){
-//        office.numberOfEmployees();
-//        assertThat(office.employeeCount()).isEqualTo(12);
-//    }
-
     @Test
     void canCalculateNumberOfEmployees(){
         assertThat(office.numberOfEmployees()).isEqualTo(12);
     }
+
+    @Test
+    void canRentOfficeFromBookingWebsite(){
+        String result = office.rent(7);
+        assertThat(result).isEqualTo("You are able to rent this office for 7 days.");
+
+    }
+
+
+
+
 }
